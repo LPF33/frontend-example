@@ -32,15 +32,16 @@ subscribe: e.g. useSelector-hook, with this hook a functional component can get 
 Another advantage: Redux Middleware: functions, that can run between the dispatching of an action and the action's arrival at the reducer.
 
 ### What are the differences between classes and functional components?
-Class:                                  Function:
-ES6 class                               normal JS function or arrow function
-extends the React.Component  
-access props with this.props            as an argument passed to the function
-React lifecycle methods                 useEffect - Hooks / specify more side effects  / go more in detail
-in constructor initial this.state       useState - Hooks / can have different states
-render-method                           returns the JSX
-Higher-Order Components                 Higher-Order Components / Custom hooks
-                                        easier to code and to read
+|Class:                                  |Function:                                                         |
+|----------------------------------------|------------------------------------------------------------------|
+|ES6 class                               |normal JS function or arrow function                              |
+|extends the React.Component             |                                                                  |
+|access props with this.props            |as an argument passed to the function                             |
+|React lifecycle methods                 |useEffect - Hooks / specify more side effects  / go more in detail|
+|in constructor initial this.state       |useState - Hooks / can have different states                      |
+|render-method                           |returns the JSX                                                   |
+|Higher-Order Components                 |Higher-Order Components / Custom hooks                            |
+|                                        |easier to code and to read                                        |
 
 ### What are the advantages of hooks over high order components or even mixins?
 Much easier to read, to understand and to code.
