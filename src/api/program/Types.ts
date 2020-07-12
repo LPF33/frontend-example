@@ -9,4 +9,6 @@ export interface Match {
     homeTeam: Team;
     awayTeam: Team;
     score?: [number, number];
+    country: string;
+    league: string;
 }

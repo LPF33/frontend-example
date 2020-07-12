@@ -41,4 +41,15 @@ describe('DateFormat', () => {
             expect(DateFormat.milliSecondsToFullinutes(now + minutes * 60 * 1000 - now)).toBe(minutes);
         });
     });
+    describe('timestampToWeekday', () => {
+        it('de with default options', () => {
+            expect(DateFormat.timestampToWeekday(new Date('2020-07-11 15:30').getTime(), 'de')).toBe('Samstag');
+        });
+        it('en-gb with default options', () => {
+            expect(DateFormat.timestampToWeekday(new Date('2020-07-11 15:30').getTime(), 'en-GB')).toBe('Saturday');
+        });
+        it('en-us with default options', () => {
+            expect(DateFormat.timestampToWeekday(new Date('2020-07-10 15:30').getTime(), 'en-US')).toBe('Friday');
+        });
+    });
 });

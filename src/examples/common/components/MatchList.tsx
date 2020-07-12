@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import * as ProgramTypes from '../../../api/program/Types';
 import Match from '../../common/components/Match';
 import styled from 'styled-components';
@@ -13,6 +13,15 @@ interface Props {
 }
 
 const MatchList: React.FC<Props> = ({matches, getMatches}) => {
+    let intervalId = useRef<number>(0);
+
+    useEffect(() => {
+        intervalId.current = setInterval(getMatches, 60000);
+        return () => {
+            clearInterval(intervalId.current);
+        };
+    }, []);
+
     return (
         <Container>
             {matches.length === 0 ? (
