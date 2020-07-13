@@ -36,11 +36,11 @@ Another advantage: Redux Middleware: functions, that can run between the dispatc
 |----------------------------------------|------------------------------------------------------------------|
 |ES6 class                               |normal JS function or arrow function                              |
 |extends the React.Component             |                                                                  |
-|access props with this.props            |as an argument passed to the function                             |
+|access props with this.props            |props passed as an argument to the function                       |
 |React lifecycle methods                 |useEffect - Hooks / specify more side effects  / go more in detail|
 |in constructor initial this.state       |useState - Hooks / can have different states                      |
 |render-method                           |returns the JSX                                                   |
-|Higher-Order Components                 |Higher-Order Components / Custom hooks                            |
+|Transformation: Higher-Order Components |Transformation: Higher-Order Components / Custom                  |
 |                                        |easier to code and to read                                        |
 
 ### What are the advantages of hooks over high order components or even mixins?
